@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView guideText = findViewById(R.id.guide_text);
-        guideText.setText(GuideContent.build());
+        if (guideText != null) {
+            guideText.setText(GuideContent.build());
+        }
     }
 }
